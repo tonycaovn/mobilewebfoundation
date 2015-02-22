@@ -1,0 +1,27 @@
+1/ Set the body font-size using relative sizing so that 1em = 10px. Remember, the default font-size for a browser is 16px.
+
+body {
+ font-size: 62.5%;
+}
+
+2/ Using ems, set the h1 to be the equivalent of 24px. Remember, the target divided by context rule, keeping in mind our context is the body font-size set in pixels
+
+h1 {
+  font-size:2.4em;
+}
+
+
+3/ Using ems, set the a element inside the h1 element to be 16px. Remember, the target divided by context rule, keeping in mind our context has changed. Use the CSS Source tab below for additional help. Specify your answer to at least 6 decimals.
+
+h1 a {
+  font-size: 0.666666em;
+}
+
+4/ Set the <h1> to a font-size, in ems, of 70px, with the context being 16px. Also, set the <h3> font-size to 40px, in ems with the same context. Be sure to view the Rendered tab to see the site you'll be building in future levels. Use the toolbar buttons and border handles to resize the site.
+
+h1 {
+  font-size:4.375em;
+}
+h3 {
+  font-size:2.5em;
+}

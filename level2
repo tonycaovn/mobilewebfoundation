@@ -1,0 +1,39 @@
+1/ Using percentages, set the width for the .sidebar to the equivalent of 400px to 6 decimals. Remember, the context is the total width of the site which is 960px. Use the HTML and CSS Source tabs for more information. Use this Flexible Math tool to help.
+
+.sidebar {
+  width: 41.666666%;
+}
+
+2/ Using percentages, set the width for the .content to the equivalent of 575px. Remember, the context is the total width of the site which is 960px. Use this Flexible Math tool to help.
+
+.content {
+  width: 59.895833%;
+}
+
+3/ From the markup in the HTML Source, what is the correct context for the h1 element? Enter the CSS selector for the correct HTML element below.
+
+header{
+}
+
+4/ From the markup in the HTML Source, what is the correct context for .content? Enter the CSS selector for the correct HTML element below.
+
+.container{
+}
+
+5/ From the CSS styles given, convert .content to a percentage. Give your answer to 6 decimals. Use this Flexible Math tool to help.
+
+.content {
+  width: 57.291666%;
+}
+
+6/ Using percentages, set the margin-right of .content to the equivalent of 380px to 6 decimals. Determine the correct context by viewing the given HTML markup.
+
+.content {
+  margin-right: 39.583333%;
+}
+
+7/ Using percentages, set the padding of .content to the equivalent of 31px. Determine the correct context by viewing the given HTML markup. Give your answer to at least 7 decimals.
+
+.content {
+  padding: 5.5357143%;
+}

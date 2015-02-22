@@ -1,0 +1,55 @@
+1/ Set the max-width of images to 100%.
+
+img{
+  max-width:100%;
+}
+
+2/ Set the max-width of images, embeds, objects, and videos to 100%.
+
+img, embed, object, video{
+  max-width:100%;
+}
+
+3/ Write a media query to target devices with a at least a 1.5 device-pixel-ratio, using the screen media type. Make sure to target the -webkit proprietary extension, as well.
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5){  
+}
+
+@media only screen and (min-device-pixel-ratio:1.5){
+}
+
+4/ Assuming we have a 75px by 75px logo.png image and a high-resolution logo@2x.png image, include the high-resolution image within the media query you just wrote as a background-image on the .logo. Don't forget to set the background-size as well.
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .logo {
+    background-image:url('logo@2x.png');
+    background-size: 75px 75px;
+    -webkit-background-size:75px 75px;
+  }
+}
+
+5/ Using the Scott Jehl PictureFill method, create a <picture> element with "Our Camp Site" as the alt text. Also add camp-site.jpeg as the smallest source size, with no @media qualifier.
+
+<picture  alt="Our Camp Site">
+  <source src="camp-site.jpeg"></source>
+</picture>
+
+6/ Now, add camp-site-lrg.jpeg as the second source, with an @media qualifier for devices with a width of at least 900px.
+
+<picture alt="Our Camp Site">
+  <source src="camp-site.jpeg" />
+  <source src="camp-site-lrg.jpeg"  media="(min-width: 900px)"/>
+</picture>
+
+7/ Finally, add a <noscript> fallback block within the <picture> element to include a normal img tag, with the camp-site.jpeg and "Our Camp Site" alt text.
+
+<picture alt="Our Camp Site">
+  <source src="camp-site.jpeg" />
+  <source src="camp-site-lrg.jpeg" media="(min-width: 900px)" />
+  <noscript>
+      <img src="camp-site.jpeg" alt="Our Camp Site"></img>
+  </noscript>
+</picture>
+

@@ -1,0 +1,63 @@
+1/ Using the border handles on either side, keep resizing the site below to see where the logo breaks. Once you find it, write a media query to target that breakpoint, adding 20px to the breakpoint you find. Use the max-width property.
+
+@media screen and (max-width:854px){
+
+}
+
+2/ Using the media query that you just wrote, adjust the <h1> font-size, using ems, with a target font-size of 50px, with our context being 16px. Also, set the line-height to the em equivalent of 30px.
+
+@media screen and (max-width: 850px) {
+  h1 {
+    font-size: 3.125em;
+    line-height: 0.6em;
+  }
+}
+
+3/ It looks like the <nav> is pushed a little far down, so let's reduce the margin-top to 20px. We should also reduce the font-size on the <nav> <li>'s, in ems, to the equivalent of 14px with our context being 16px.
+
+@media screen and (max-width: 850px) {
+  nav {
+    margin-top: 20px;
+  }
+  nav ul li {
+    font-size: 0.875em;
+  }
+}
+
+4/ We should start preparing the .banner-caption for the lower viewports by adjusting the position and size of it. Let's set the bottom value to 0 so it sticks to the bottom, and extend the width 100%. You can use the CSS Source to view original styles.
+
+@media screen and (max-width: 850px) {
+  .banner-caption {
+    bottom:0px;
+    width:100%;
+  }   
+}
+
+
+5/ Using the border handles on either side, keep resizing the site below to see where the logo and nav stack. Write the media query to the next breakpoint. Use the max-width property.
+
+@media screen and (max-width:720px){
+
+}
+
+6/ Use the media query you just wrote to make the <h1> font-size 70px, in ems, with a context of 16px. Also, set the line-height to the em equivalent of 40px.
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size:4.375em;
+    line-height: .571428em;
+  }
+}
+
+7/ Now, increase the <nav> <li>'s font-size to a target of 18px, with the context being 16px, Also, our .banner is getting rather large height-wise at this lower viewport. Let's set the height of the .banner to 250px.
+
+@media screen and (max-width: 720px) {
+  nav ul li {
+    font-size: 1.125em;
+  }
+  .banner {
+    height: 250px;
+  }
+}
+
+

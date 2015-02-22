@@ -1,0 +1,42 @@
+1/ We want to target a mobile device, specifically an iPhone. Write a media query to target the iPhone's 320px width, using the max-width property.
+
+@media screen and (max-width: 320px){
+}
+
+2/ Using the media query you just wrote, stack the .logo and <nav>, rather than floating them to either side. Also, set the width to inherit from the parent and center the text inside the <nav>. Use the Desktop and Mobile buttons below to resize the site.
+
+@media screen and (max-width: 320px) {
+  .logo {
+    width: inherit;
+    float:none;
+  }
+  nav {
+    width: inherit;
+    text-align:center;
+    float:none;
+  }
+}
+
+3/ Stack the .content and the .sidebar, making sure their width inherits from the parent container. Use the Desktop and Mobile buttons below to resize the site.
+
+
+@media screen and (max-width: 320px) {
+  .content {
+    width: inherit;
+    float:none;
+  }
+  .sidebar {
+    width: inherit;
+    float:none;
+  }
+}
+
+4/ Target the <nav> <ul> <li>'s, giving them a margin-right of 5%, set the text to uppercase, and set the font-size, in ems, to a target of 13px, with the context being 16px.
+
+@media screen and (max-width: 320px) {
+  nav ul li {
+    margin-right: 5%;
+    text-transform: uppercase;
+    font-size: 0.8125em;
+  }
+}
